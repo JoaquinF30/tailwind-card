@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet"> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+    </style>
+    <title>Tailwind card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex bg-no-repeat bg-cover h-screen" style="background-image: url(src/pattern-background-desktop.svg)">
+    <div id="main-card" class="flex justify-center m-auto flex-col rounded-2xl bg-white shadow-2xl max-w-[25rem]">
+      <img class="rounded-t-2xl" src="src/illustration-hero.svg" alt="illustration-hero">
+      <div class="flex my-8 px-8 justify-center flex-col gap-4">
+        <h1 class="text-center text-2xl font-bold">Order Summary</h1>
+        <p class="text-center text-slate-500">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <div class="flex flex-row bg-gray-100 p-4 gap-4 items-center rounded-lg">
+          <img class="h-8" src="src/icon-music.svg" alt="music">
+          <div class="flex flex-col">
+            <h2>Annual Plan</h2>
+            <p class="text-slate-500">$59.99/year</p>
+          </div>
+          <a class="grow text-end text-indigo-700 underline font-bold" href="">Change</a>
+        </div>
+
+        <button class="h-10 bg-indigo-700 rounded-lg shadow-lg text-white font-bold">
+          Proceed to Payment
+        </button>
+        
+        <button class="text-slate-500">
+          Cancel Order
+        </button>
+
+        
+      </div>
+
+    </div>
+  </body>
+</html>
